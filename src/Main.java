@@ -40,9 +40,9 @@ public class Main {
         System.out.println("task 3");
         int year = 2032;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println("leap year");
+            System.out.println("year is leap");
         } else {
-            System.out.println("Not leap year");
+            System.out.println("year isn't leap");
 
 
         }
