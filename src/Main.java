@@ -12,9 +12,9 @@ public class Main {
     public static void task1() {
         System.out.println("task 1");
         int clientOs = 1;
-        int IOs = 0;
+        int iOs = 0;
         int android = 1;
-        if (clientOs == IOs) {
+        if (clientOs == iOs) {
             System.out.println("Install the IOS version of the app by following the link");
         } else if(clientOs == android){
             System.out.println("Install the Android version of the app by following the link");
@@ -25,18 +25,19 @@ public class Main {
 
     public static void task2() {
         System.out.println("task 2");
-        int clientOs = 1;
-        int IOs = 0;
+        int clientOs = 3;
+        int iOs = 0;
         int android = 1;
-        int chekYear = 2014;
-        if (clientOs == IOs && chekYear <= 2014) {
+        int clientDeviceYear =2015;
+        int chekYear = 2015;
+        if (clientOs == iOs && clientDeviceYear <= chekYear ) {
             System.out.println("Install the lite version of the iOS app by following the link");
-        } else if (clientOs == IOs && chekYear >= 2015) {
+        } else if (clientOs == iOs && clientDeviceYear >= chekYear) {
             System.out.println("Install the IOS version of the app by following the link");
         }
-        if (clientOs == android && chekYear <= 2014) {
+        if (clientOs == android && clientDeviceYear <= chekYear) {
             System.out.println("Install the lite version of the Android app by following the link");
-        } else if (clientOs == 1 && chekYear >= 2015) {
+        } else if (clientOs == android && clientDeviceYear >= chekYear) {
             System.out.println("Install the Android version of the app by following the link");
         }else{
             System.out.println("Your OS not support!");
