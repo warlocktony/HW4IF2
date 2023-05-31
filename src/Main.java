@@ -12,26 +12,35 @@ public class Main {
     public static void task1() {
         System.out.println("task 1");
         int clientOs = 1;
-        if (clientOs < 1) {
+        int iOs = 0;
+        int android = 1;
+        if (clientOs == iOs) {
             System.out.println("Install the IOS version of the app by following the link");
-        } else {
+        } else if(clientOs == android){
             System.out.println("Install the Android version of the app by following the link");
+        }else{
+            System.out.println("Your OS not support!");
         }
     }
 
     public static void task2() {
         System.out.println("task 2");
-        int clientOs = 0;
-        int clientDeviceYear = 2014;
-        if (clientOs == 0 && clientDeviceYear <= 2014) {
+        int clientOs = 3;
+        int iOs = 0;
+        int android = 1;
+        int clientDeviceYear =2015;
+        int chekYear = 2015;
+        if (clientOs == iOs && clientDeviceYear <= chekYear ) {
             System.out.println("Install the lite version of the iOS app by following the link");
-        } else if (clientOs == 0 && clientDeviceYear >= 2015) {
+        } else if (clientOs == iOs && clientDeviceYear >= chekYear) {
             System.out.println("Install the IOS version of the app by following the link");
         }
-        if (clientOs == 1 && clientDeviceYear <= 2014) {
+        if (clientOs == android && clientDeviceYear <= chekYear) {
             System.out.println("Install the lite version of the Android app by following the link");
-        } else if (clientOs == 1 && clientDeviceYear >= 2015) {
+        } else if (clientOs == android && clientDeviceYear >= chekYear) {
             System.out.println("Install the Android version of the app by following the link");
+        }else{
+            System.out.println("Your OS not support!");
         }
 
     }
@@ -40,9 +49,9 @@ public class Main {
         System.out.println("task 3");
         int year = 2032;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println("leap year");
+            System.out.println("year is leap");
         } else {
-            System.out.println("Not leap year");
+            System.out.println("year isn't leap");
 
 
         }
@@ -52,18 +61,17 @@ public class Main {
 
     public static void task4() {
         System.out.println("task 4");
-        int deliveryDistance = 50;
-        int deliveryOne = 1;
-        int deliveryTwo =2;
-        int deliveryThree = 3;
+        int deliveryDistance = 103;
+        int delivery = 1;
+
 
         if (deliveryDistance <= 20) {
-            System.out.println("need day: " + deliveryOne);
+            System.out.println("need day: " + delivery);
         } else if (deliveryDistance > 20 && deliveryDistance <=60){
-            System.out.println("need days: " + deliveryTwo);
+            System.out.println("need days: " + (delivery + 1));
 
         }else if (deliveryDistance > 60 && deliveryDistance <=100 ){
-            System.out.println("need days " + deliveryThree);
+            System.out.println("need days " + (delivery + 2));
 
         }else if (deliveryDistance > 100) {
             System.out.println("no delivery!!!");
